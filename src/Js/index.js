@@ -82,5 +82,11 @@ $(function() {
             setTime = setInterval(goTop, 50);
         })
       }
-      inform()
+      inform();
+  function tab(){
+    $(".news-tab li").click(function(){
+      var index =$(this).index();
+      $(this).addClass("on").siblings().removeClass("on");
+    })
+  }
 })

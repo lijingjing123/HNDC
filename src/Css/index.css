@@ -933,6 +933,9 @@ time {
   display: inline;
   padding: 0 15px;
 }
+.news-tab li.on a {
+  border-bottom: 2px solid #0092d7;
+}
 .news-tab li + li {
   border-left: 1px solid #d8d8d8;
 }

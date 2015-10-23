@@ -216,6 +216,9 @@ overflow:hidden;
   padding:0 15px;
   
   }
+  li.on a{
+     border-bottom:2px solid $linkcolor;
+  }
   li+li{
   border-left:$border;
   }
