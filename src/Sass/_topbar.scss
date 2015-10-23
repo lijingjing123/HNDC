@@ -1,0 +1,15 @@
+/*#顶部*/
+#topbar{
+  background:#fdfdfd;  
+  @include font(12px,$color);
+  @include line-height(30px);
+  min-width:$totalwidth;
+  border-bottom:1px solid #f1f1f1;
+  .inner-topbar{
+    @include totalcenter;
+    text-align:left;
+  }
+  
+  
+}
+/*/顶部*/

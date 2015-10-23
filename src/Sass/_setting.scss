@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+$linkcolor:#0092d7;//hover后的color
+// $figureNormalSize: 14px 296px 383px !default; //左边距/宽度/高度
+$color:#666;
+$border:1px solid #d8d8d8 !default;
+$totalwidth:1002px !default;
+$fontType:14px #2f2f2f !default;//字体大小/字体颜色
+//定义font块
+@mixin font($font-size:nth($fontType,1),$color:nth($fontType,2)){
+  font-size:$font-size;
+  color:$color;
+}
+//模块居中
+@mixin totalcenter{
+  width:$totalwidth;
+  margin:0 auto;
+}
+
+//定义text-overflow
+@mixin text-overflow{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+//定义position:absolute块
+@mixin absolute($top:0,$left:0,$z-index:1){
+  position:absolute;
+  top:$top;
+  left:$left;
+  z-index:$z-index;
+}
+
+//定义兼容性行内元素
+@mixin inline-block{
+   display:inline-block;
+  *display:inline;
+  *zoom:1;
+}
+//定义line-height块
+@mixin line-height($height:20px){
+  height:$height;
+  line-height:$height;
+}
+//渐变
+@mixin gradient($start:#fff,$end:#dddcdc){
+  background:#f5f5f5;
+// filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=white,endcolorstr=gray,gradientType=0);
+background: -ms-linear-gradient(top, $start,$end);        /* IE 10 */
+
+background:-moz-linear-gradient(top,$start,$end);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from($start), to($end));/*谷歌*/ 
+
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start), to($end));      /* Safari 4-5, Chrome 1-9*/
+
+background: -webkit-linear-gradient(top, $start, $end);   /*Safari5.1 Chrome 10+*/
+
+background: -o-linear-gradient(top,$start,$end);  /*Opera 11.10+*/
+
+}
+
+
+
+
+

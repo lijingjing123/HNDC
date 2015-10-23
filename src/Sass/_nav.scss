@@ -1,0 +1,57 @@
+.inner-nav{
+  @include totalcenter;
+  
+  font-size:16px;
+  @at-root .nav-one{
+    font-size:0;
+    background:#1865bc;
+    
+    
+  &>li{
+    @include inline-block;
+    font-size:16px;
+    @include line-height(38px);
+    width:$totalwidth / 11;
+    text-align: center;
+    position: relative;
+    &:hover .nav-two{
+     display: block;
+    }
+    &>a{
+    color:#fff;
+    display: block;
+  }
+
+  &:hover>a,&>a:hover{
+    color:#fff;
+    background:$linkcolor;
+     margin-top:-5px;
+    padding-top:5px;
+  }
+  }
+  &>li+li{
+    background:url(../image/nav_li_bg.png) no-repeat left center;
+  }
+  }
+  @at-root .nav-two{
+    @include absolute(38px,-1px,5);
+    background:#fff;
+    border:1px solid #1865bc;
+    border-top:none;
+    width:91px;
+    display: none;
+    font-size:14px;
+    li{
+     @include line-height(38px);
+    }
+    a{
+      color:$linkcolor;
+      display: block;
+    }
+    a:hover{
+      color:#fff;
+      background:$linkcolor;
+    }
+  }
+  
+}
