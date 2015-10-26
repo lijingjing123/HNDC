@@ -83,10 +83,15 @@ $(function() {
         })
       }
       inform();
-  function tab(){
-    $(".news-tab li").click(function(){
-      var index =$(this).index();
-      $(this).addClass("on").siblings().removeClass("on");
-    })
+  function tab(i){  
+      $(".news-tab li").eq(i).addClass("on").siblings().removeClass("on");
+      $(".news-contain .news-content").eq(i).show().siblings().hide();      
   }
+  //初始化
+  tab(0);
+  //切换
+   $(".news-tab li").click(function(){
+      var index =$(this).index();
+       tab(index);
+        })
 })

@@ -211,23 +211,19 @@ overflow:hidden;
   float:left;
   padding-left:30px;
   padding-top:2px;
+  line-height:35px;
   li{
   display:inline;
   padding:0 15px;
-  
-  }
-  li.on a{
-     border-bottom:2px solid $linkcolor;
+  cursor: pointer;
+  padding-bottom:6px;
+  &:hover,&.on{
+    color:$linkcolor;
+    border-bottom:2px solid $linkcolor;
+  } 
   }
   li+li{
   border-left:$border;
-  }
-  a{
-   @include inline-block;
-    line-height:33px;
-  }
-  a:hover{
-   border-bottom:2px solid $linkcolor;
   }
   }
 }

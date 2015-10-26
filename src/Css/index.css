@@ -928,25 +928,20 @@ time {
   float: left;
   padding-left: 30px;
   padding-top: 2px;
+  line-height: 35px;
 }
 .news-tab li {
   display: inline;
   padding: 0 15px;
+  cursor: pointer;
+  padding-bottom: 6px;
 }
-.news-tab li.on a {
+.news-tab li:hover, .news-tab li.on {
+  color: #0092d7;
   border-bottom: 2px solid #0092d7;
 }
 .news-tab li + li {
   border-left: 1px solid #d8d8d8;
-}
-.news-tab a {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  line-height: 33px;
-}
-.news-tab a:hover {
-  border-bottom: 2px solid #0092d7;
 }
 .main-body .news-content {
   margin-top: 15px;
