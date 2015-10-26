@@ -1,5 +1,5 @@
 .page{
-  min-width:1226px;
+  min-width:1002px;
 }
 body{
   font: 14px/1.5 "Microsoft Yahei";
@@ -14,3 +14,9 @@ a{
   time{
     @include font(12px,#999);
   }
+#article{
+  margin-left:208px;
+}
+.wrap-container{
+  @include totalcenter;
+}

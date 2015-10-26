@@ -5,21 +5,7 @@
 @import "../Sass/nav";
 @import "../Sass/footer";
 @import "../Sass/common";
-.inner-show-slide{
-  @include totalcenter;
-  overflow: hidden;
-  @at-root .show-slide-list{
-    width:20000000px;
-    font-size:0;
-    .show-slide-item{
-      @include inline-block;
-    }
-    img{
-      width:$totalwidth;
-      height:148px;
-    }
-  }
-}
+@import "../Sass/slide_show";
 .wrap-container{
   @include totalcenter;
   margin-top:10px;

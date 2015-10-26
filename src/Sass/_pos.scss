@@ -1,21 +1,20 @@
 #pos{
-  background:#f5f5f5;
+
   .inner-pos{
     @include totalcenter;
-    @include line-height(54px);
-  }
-  p{
-    color:#b0b0b0;
+    @include line-height(70px);
+    font-size:12px;
+  
   }
   a{
-    @include font(12px,#757575);
-    padding:0 5px;
+    padding:0 3px;
   }
-  a:hover{
-    color:#424242;
+  p{
+     background:url(../image/pos.png) no-repeat left center;
+  padding-left:20px; 
   }
   span{
-    @include font(12px,#ff6700);
+    @include font(12px,$linkcolor);
     padding:0 5px;
   }
 }

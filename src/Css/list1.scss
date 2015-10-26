@@ -3,5 +3,53 @@
 @import "../Sass/topbar";
 @import "../Sass/header";
 @import "../Sass/nav";
+@import "../Sass/slide_show";
+@import "../Sass/pos";
+@import "../Sass/side_menu";
+@import "../Sass/pagging";
 @import "../Sass/footer";
 @import "../Sass/common";
+
+.inner-article{
+  padding:25px;
+  h3{
+   @include font(18px,#333333);
+   @include inline-block;
+   padding-bottom:5px;
+   border-bottom:3px solid $linkcolor;
+  }
+}
+.article-content{
+  padding:10px 0;
+ @at-root .article-item{
+    @include line-height(55px);
+    border-bottom:1px dashed #dadada;
+    position: relative;
+    padding-left:34px;
+    overflow: hidden;
+    &::before{
+      content:" ";
+     position: absolute;
+     top:50%;
+     left:10px;
+     margin-top:-5px;
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:#ccc;
+    }
+    &:hover:before{
+      background:$linkcolor;
+    }
+    a{
+      @include inline-block;
+      width:70%;
+      @include text-overflow;
+    }
+    time{
+      font-size:14px;
+      float: right;
+    }
+  }
+  padding-bottom:80px;
+}
