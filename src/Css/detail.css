@@ -718,20 +718,35 @@ textarea::-webkit-input-placeholder {
   font-size: 24px;
 }
 .side-nav {
-  padding: 8px 20px 8px 0;
+  padding: 8px 0px;
   color: #333;
-  padding-left: 20px;
+}
+.side-nav dl {
+  padding: 0 20px;
+}
+.side-nav dl.on {
+  background: url(../image/sub_dl.png) no-repeat 0 15px;
+}
+.side-nav dl.on dt a {
+  color: #094d98;
+}
+.side-nav dl.on dd {
+  display: block;
 }
 .side-nav dt {
   height: 44px;
   line-height: 44px;
   background: url(../image/dl_bg.png) repeat-x left bottom;
+  cursor: pointer;
 }
 .side-nav dt a {
   display: block;
 }
 .side-nav dt:hover a {
   color: #094d98;
+}
+.side-nav dd {
+  display: none;
 }
 .side-nav dd a {
   display: block;

@@ -24,6 +24,8 @@
   position: relative;
   padding-left:230px;
   overflow: hidden;
+  height:128px;
+  margin-bottom:44px;
   figcaption{
     font-size:16px;
     line-height:30px;
@@ -55,12 +57,29 @@
   p{
     font-size:12px;
     line-height:20px;
-    padding:10px 0 15px;
+    padding:10px 0;
+    height:41px;
+    overflow: hidden;
     border-bottom:1px dashed #dfdfdf;
+    a:hover{
+      text-decoration: underline;
+    }
   }
   .more{
     float:right;
     margin-right:20px;
+    margin-top:5px;
+    width:39px;
+    height:14px;
+    font-size:0;
+    background:url(../image/more_bg.png) no-repeat center;
+    &:hover{
+      background:url(../image/more_hover_bg.png) no-repeat center;
+    }
+    a{
+      display: block;
+      line-height:14px;
+    }
   }
  }
 }

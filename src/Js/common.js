@@ -1,3 +1,4 @@
+ $(function() { 
      //头部banner
   function headerSlide(){
     var i = 0;
@@ -20,3 +21,20 @@
         })
   }
   headerSlide();
+
+  function subMenu(){
+    $(".side-nav dl").each(function(){
+    var n=0;
+    $(this).find("dt").click(function(){
+      if(n%2==0){
+      $(this).parent().addClass("on");
+    }
+    else{
+      $(this).parent().removeClass("on"); 
+    }
+    n++;
+    })
+  })
+  }
+  subMenu();
+})

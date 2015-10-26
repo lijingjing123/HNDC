@@ -718,20 +718,35 @@ textarea::-webkit-input-placeholder {
   font-size: 24px;
 }
 .side-nav {
-  padding: 8px 20px 8px 0;
+  padding: 8px 0px;
   color: #333;
-  padding-left: 20px;
+}
+.side-nav dl {
+  padding: 0 20px;
+}
+.side-nav dl.on {
+  background: url(../image/sub_dl.png) no-repeat 0 15px;
+}
+.side-nav dl.on dt a {
+  color: #094d98;
+}
+.side-nav dl.on dd {
+  display: block;
 }
 .side-nav dt {
   height: 44px;
   line-height: 44px;
   background: url(../image/dl_bg.png) repeat-x left bottom;
+  cursor: pointer;
 }
 .side-nav dt a {
   display: block;
 }
 .side-nav dt:hover a {
   color: #094d98;
+}
+.side-nav dd {
+  display: none;
 }
 .side-nav dd a {
   display: block;
@@ -887,6 +902,8 @@ time {
   position: relative;
   padding-left: 230px;
   overflow: hidden;
+  height: 128px;
+  margin-bottom: 44px;
 }
 .article-item figcaption {
   font-size: 16px;
@@ -921,12 +938,29 @@ time {
 .article-item p {
   font-size: 12px;
   line-height: 20px;
-  padding: 10px 0 15px;
+  padding: 10px 0;
+  height: 41px;
+  overflow: hidden;
   border-bottom: 1px dashed #dfdfdf;
+}
+.article-item p a:hover {
+  text-decoration: underline;
 }
 .article-item .more {
   float: right;
   margin-right: 20px;
+  margin-top: 5px;
+  width: 39px;
+  height: 14px;
+  font-size: 0;
+  background: url(../image/more_bg.png) no-repeat center;
+}
+.article-item .more:hover {
+  background: url(../image/more_hover_bg.png) no-repeat center;
+}
+.article-item .more a {
+  display: block;
+  line-height: 14px;
 }
 
 /*# sourceMappingURL=list3.css.map */

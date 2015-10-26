@@ -9,12 +9,24 @@
     font-size:24px;
   }
   @at-root .side-nav{
-    padding:8px 20px 8px 0;
+    padding:8px 0px;
     color:#333;
-    padding-left:20px;
+    dl{
+      padding:0 20px;
+    }
+    dl.on{
+      background:url(../image/sub_dl.png) no-repeat 0 15px;
+      dt a{
+       color:#094d98;
+      }
+      dd{
+        display:block;
+      }
+    }
     dt{
       @include line-height(44px);
       background:url(../image/dl_bg.png) repeat-x left bottom;
+      cursor: pointer;
       a{
         display: block;
       }
@@ -23,6 +35,7 @@
       }
     }
     dd{
+      display: none;
       a{
         display: block;
         @include line-height(36px);
