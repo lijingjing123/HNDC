@@ -654,9 +654,6 @@ time{
   margin-top:8px;
 }
 
-.wrap-footer{
-  clear:both;
-}
 #link{
   @include totalcenter;
   .link-title{
@@ -679,40 +676,5 @@ time{
     padding-left:20px;
     padding-right:20px;
     background:url(../image/link_bg.png) no-repeat left center;
-  }
-}
-.footer-nav{
-   background:url(../image/footer_nav.png) repeat-x left center;
-   @include line-height(43px);
-   text-align:center;
-   color:#fff;
-   margin-top:20px;
-   ul{
-    font-size:0;
-   }
-   li{
-    @include inline-block;
-    font-size:12px;
-   }
-   a{
-    color:#fff;
-    padding:0 5px;
-   }
-   a:hover{
-    text-decoration: underline;
-   }
-}
-#footer{
-  text-align:center;
-  font-size:12px;
-  padding:10px 0;
-  line-height:20px;
-  em{
-    font-style:normal;
-    padding:0 5px;
-    color:#000;
-  }
-  a{
-    padding:0 2px 0 5px;
   }
 }
