@@ -1,0 +1,15 @@
+.inner-show-slide{
+  @include totalcenter;
+  overflow: hidden;
+  @at-root .show-slide-list{
+    width:20000000px;
+    font-size:0;
+    .show-slide-item{
+      @include inline-block;
+    }
+    img{
+      width:$totalwidth;
+      height:148px;
+    }
+  }
+}

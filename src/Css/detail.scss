@@ -1,0 +1,75 @@
+@import "D:/sassCore/base";
+@import "../Sass/setting";
+@import "../Sass/topbar";
+@import "../Sass/header";
+@import "../Sass/nav";
+@import "../Sass/slide_show";
+@import "../Sass/pos";
+@import "../Sass/side_menu";
+@import "../Sass/footer";
+@import "../Sass/common";
+
+
+#article{
+  padding:22px 0;
+  h3{
+    color:#333333;
+    font-size:18px;
+  }
+  @at-root .article-title{
+    text-align: center;
+    padding-bottom:15px;
+    p{
+      color:#aaa;
+      padding:10px 0;
+    }
+    .article-src{
+      padding-left:35px;
+    }
+  }
+  @at-root .article-content{
+    border-top:1px solid #f2f2f2;
+    padding:20px 30px;
+    p{
+      text-indent:2em;
+      color:#555;
+      line-height:25px;
+      margin-bottom:25px;
+    }
+  }
+  @at-root .article-accessory{
+    padding:0 30px;
+    dt,dd{
+      display: inline;
+    }
+    a{
+      color:$linkcolor;
+    }
+    img{
+      vertical-align: top;
+    }
+  }
+  @at-root .adjacent{
+    margin-top:80px;
+    border-top:1px solid #f2f2f2;
+    padding:20px 30px 0;
+    overflow: hidden;
+    dl{
+      
+      @include text-overflow;
+      width:45%;
+      dt,dd{
+        display: inline;
+      }
+     @at-root .adjacent-prev{
+      float: left;
+    }
+     @at-root .adjacent-next{
+      float: right;
+    }
+    a{
+      color:$linkcolor;
+    }
+    }
+  }
+}

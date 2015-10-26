@@ -1,0 +1,31 @@
+@import "D:/sassCore/base";
+@import "../Sass/setting";
+@import "../Sass/topbar";
+@import "../Sass/header";
+@import "../Sass/nav";
+@import "../Sass/slide_show";
+@import "../Sass/pos";
+@import "../Sass/side_menu";
+@import "../Sass/footer";
+@import "../Sass/common";
+#article{
+  padding:22px 0;
+  h3{
+    color:#333333;
+    font-size:18px;
+  }
+  @at-root .article-title{
+    text-align: center;
+    padding:15px 0 30px;
+  }
+  @at-root .article-content{
+    border-top:1px solid #f2f2f2;
+    padding:20px 30px;
+    p{
+      text-indent:2em;
+      color:#555;
+      line-height:25px;
+      margin-bottom:25px;
+    }
+  }
+}
