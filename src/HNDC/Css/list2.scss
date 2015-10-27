@@ -1,0 +1,55 @@
+@import "D:/sassCore/base";
+@import "../Sass/setting";
+@import "../Sass/topbar";
+@import "../Sass/header";
+@import "../Sass/nav";
+@import "../Sass/slide_show";
+@import "../Sass/pos";
+@import "../Sass/side_menu";
+@import "../Sass/pagging";
+@import "../Sass/footer";
+@import "../Sass/common";
+.inner-article{
+  padding:10px 20px;
+  h3{
+   @include font(18px,#333333);
+   @include inline-block;
+   padding-bottom:5px;
+   border-bottom:3px solid $linkcolor;
+  }
+}
+.article-content{
+  padding:26px 0;
+  font-size:0;
+  margin-left:-14px;
+ @at-root .article-item{
+  @include inline-block;
+    width:242px;
+    height:223px;
+    font-size:14px;
+    margin-left:14px;
+    margin-bottom:25px;
+    position: relative;
+    text-align: center;
+    &:hover{
+      background:#f3f3f3;
+    }
+    img{
+      @include absolute;
+      width:242px;
+      height:158px;
+    }
+    figcaption{
+      padding-top:168px;
+      @include text-overflow;
+      line-height:20px;
+    }
+    dt,dd{
+     display: inline;
+     font-size:12px;
+    }
+    time{
+      color:#666;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "D:/sassCore/base";
+@import "../Sass/setting";
+@import "../Sass/topbar";
+@import "../Sass/header";
+@import "../Sass/nav";
+@import "../Sass/slide_show";
+@import "../Sass/pos";
+@import "../Sass/side_menu";
+@import "../Sass/pagging";
+@import "../Sass/footer";
+@import "../Sass/common";
+.inner-article{
+   padding:10px 20px;
+  h3{
+   @include font(18px,#333333);
+   @include inline-block;
+   padding-bottom:5px;
+   border-bottom:3px solid $linkcolor;
+  }
+}
+.article-content{
+  padding:26px 0;
+ @at-root .article-item{
+  position: relative;
+  padding-left:230px;
+  overflow: hidden;
+  height:128px;
+  margin-bottom:44px;
+  figcaption{
+    font-size:16px;
+    line-height:30px;
+    @include text-overflow;
+    a{
+      color:#333;
+      &:hover{
+        color:$linkcolor;
+      }
+    }
+  }
+  dl{
+    color:#aaaaaa;
+    font-size:12px;
+  }
+  dt,dd{
+    display: inline;
+  }
+  dd{
+    padding-right:40px;
+  }
+  img{
+    position: absolute;
+    left:0;
+    top:0;
+    width:204px;
+    height:128px;
+  }
+  p{
+    font-size:12px;
+    line-height:20px;
+    padding:10px 0;
+    height:41px;
+    overflow: hidden;
+    border-bottom:1px dashed #dfdfdf;
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  .more{
+    position: absolute;
+    right:20px;
+    bottom:0;
+    width:39px;
+    height:14px;
+    font-size:0;
+    background:url(../image/more_bg.png) no-repeat center;
+    &:hover{
+      background:url(../image/more_hover_bg.png) no-repeat center;
+    }
+    a{
+      display: block;
+      line-height:14px;
+    }
+  }
+ }
+}
