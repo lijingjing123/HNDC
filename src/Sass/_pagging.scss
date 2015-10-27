@@ -36,8 +36,14 @@
  }
  .prev{ 
   background:url(../image/prev.png) no-repeat center;
+  &:hover{
+    background:url(../image/prev_hover.png) no-repeat center;
+  }
  }
  .next{
   background:url(../image/next.png) no-repeat center;
+  &:hover{
+    background:url(../image/next_hover.png) no-repeat center;
+  }
  }
 }

@@ -32,7 +32,8 @@
        }
        img{
         width:20px;
-        height:20px;
+        height:15px;
+        vertical-align: -2px;
        }
     }
     @at-root .show-us{
@@ -161,6 +162,8 @@
         color:#333;
         line-height:18px;
         font-size:12px;
+        height:54px;
+        overflow: hidden;
       }
    }
 .guide-list-content{
@@ -245,6 +248,8 @@ overflow:hidden;
   .news-headline-aticle{
     font-size:12px;
     padding-top:10px;
+    height:35px;
+    overflow: hidden;
   }
   }
   .news-detail{
@@ -289,12 +294,22 @@ overflow:hidden;
     @include inline-block;
     font-size:14px;
     vertical-align: top;
+    .load-chart{
+      overflow: hidden;
+    }
     @at-root .load-content{
   padding-top:20px;
   @at-root .load-detail{
+    position: relative;
+    figcaption{
+      position: absolute;
+      bottom:0px;
+      left:0;
+      width:100%;
+    }
    p{
     text-align:center;
-    margin:10px 0;
+    margin-bottom:10px;
    }
    .load-add{
     @include inline-block;
@@ -341,6 +356,10 @@ overflow:hidden;
     @include inline-block;
     font-size:14px;
     margin-left:18px;
+  }
+  h3{
+    background:url(../image/h3_statistics.png) no-repeat center top;
+    width:120px;
   }
    @at-root .statistics-content{
     margin-top:20px;
@@ -439,6 +458,11 @@ position:relative;
     a{
       position: relative;
       padding-left:8px;
+      *zoom: expression( 
+     this.runtimeStyle.zoom="1",
+     this.appendChild( document.createElement("small") ).className="before",
+     this.appendChild( document.createElement("small") ).className="after"
+  );  
     }
     a:before{
       content:" ";
@@ -535,9 +559,10 @@ time{
 .system-title{
   border:$border;
   border-bottom:none;
+  font-size:12px;
 }
 .system-item{
-  font-size:14px;
+  font-size:12px;
   @include inline-block;
   background:#eeeeee;
   width:104px;
@@ -545,8 +570,9 @@ time{
   margin-left:10px;
   margin-bottom:10px;
   text-align: center;
+  overflow: hidden;
   img{
-    margin:10px;
+    margin:10px 10px 5px;
   }
   a{
     color:#555;
@@ -555,8 +581,8 @@ time{
     color:$linkcolor;
   }
   .system-item-title{
-    margin:10px;
-    margin-top:0;
+    margin:0 20px 10px;
+
   } 
 }
  .system-upload{
@@ -634,6 +660,7 @@ time{
   a{
   color:#fff;
   display: block;
+  background:url(../image/a_bg.png) no-repeat 95% center;
   }
 }
 .flink-item+.flink-item{

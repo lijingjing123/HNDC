@@ -634,7 +634,7 @@ textarea::-webkit-input-placeholder {
 }
 .nav-one > li:hover > a, .nav-one > li > a:hover {
   color: #fff;
-  background: #0092d7;
+  background: #2a8cdf;
   margin-top: -5px;
   padding-top: 5px;
 }
@@ -660,6 +660,7 @@ textarea::-webkit-input-placeholder {
 .nav-two a {
   color: #0092d7;
   display: block;
+  font-size: 12px;
 }
 .nav-two a:hover {
   color: #fff;
@@ -786,6 +787,7 @@ textarea::-webkit-input-placeholder {
 }
 .footer-nav a:hover {
   text-decoration: underline;
+  color: #fff;
 }
 
 #footer {
@@ -827,6 +829,7 @@ time {
 
 #article {
   margin-left: 208px;
+  min-height: 450px;
 }
 
 .wrap-container {

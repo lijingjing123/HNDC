@@ -24,7 +24,7 @@
 
   &:hover>a,&>a:hover{
     color:#fff;
-    background:$linkcolor;
+    background:#2a8cdf;
      margin-top:-5px;
     padding-top:5px;
   }
@@ -47,6 +47,7 @@
     a{
       color:$linkcolor;
       display: block;
+      font-size:12px;
     }
     a:hover{
       color:#fff;

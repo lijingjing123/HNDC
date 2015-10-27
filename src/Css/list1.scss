@@ -27,7 +27,12 @@
     position: relative;
     padding-left:34px;
     overflow: hidden;
-    &::before{
+     *zoom: expression( 
+     this.runtimeStyle.zoom="1",
+     this.appendChild( document.createElement("small") ).className="before",
+     this.appendChild( document.createElement("small") ).className="after"
+  ); 
+    &:before{
       content:" ";
      position: absolute;
      top:50%;

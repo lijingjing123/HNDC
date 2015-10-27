@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>首页</title>
     <meta name="keywords" content="华能岳阳，电厂">
@@ -12,9 +13,11 @@
     <link rel="stylesheet" href="../Css/index.css">
     <!--jquery-->
     <script src="../jQuery/jquery.min.js"></script>
+    <script src="../jQuery/Echarts/dist/echarts.js"></script>
     <!--[if lt IE 9]>
       <script src="../jQuery/html5shiv.min.js"></script>
     <![endif]-->
+    <script src="../Js/common.js"></script> 
     <script src="../Js/index.js"></script>   
 </head>
 
@@ -77,26 +80,26 @@
             <div class="inner-nav">
                 <ul class="nav-one">
                     <li><a href="">首页</a></li>
-                    <li><a href="">首页</a>
+                    <li><a href="">通知公告</a>
                       <ul class="nav-two">
                           <li><a href="">二级导航</a></li>
                           <li><a href="">二级导航</a></li>
                       </ul>
                     </li>
-                    <li><a href="">首页</a>
+                    <li><a href="">企业概况</a>
                      <ul class="nav-two">
                           <li><a href="">二级导航</a></li>
                           <li><a href="">二级导航</a></li>
                       </ul>
                     </li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
-                    <li><a href="">首页</a></li>
+                    <li><a href="">新闻中心</a></li>
+                    <li><a href="">生产管理</a></li>
+                    <li><a href="">行政管理</a></li>
+                    <li><a href="">政工之窗</a></li>
+                    <li><a href="">人力资源</a></li>
+                    <li><a href="">公共信息</a></li>
+                    <li><a href="">三期工程</a></li>
+                    <li><a href="">应用导航</a></li>
                 </ul>
             </div>
         </nav>
@@ -227,7 +230,7 @@
                                 <time datetime="2015-09-23">2015-09-23</time>
                                 <p class="news-headline-aticle"><a href="">外媒报道一艘中国军舰靠近叙
 利亚海域，有媒体甚至猜测...</a></p>
-                               <img src="../Upload/new1.png" alt="">
+                               <a href=""><img src="../Upload/new1.png" alt=""></a>
                             </figure>
                             <figure class="news-headline-content">
                                 <figcaption class="news-headline-title">
@@ -236,7 +239,7 @@
                                 <time datetime="2015-09-23">2015-09-23</time>
                                 <p class="news-headline-aticle"><a href="">外媒报道一艘中国军舰靠近叙
 利亚海域，有媒体甚至猜测...</a></p>
-                               <img src="../Upload/new1.png" alt="">
+                               <a href=""><img src="../Upload/new1.png" alt=""></a>
                             </figure>
                         </div>
                         <div class="news-detail">
@@ -382,7 +385,7 @@
                         <div class="load-content">
                             <figure class="load-detail">
                                 <div class="load-chart">
-                                    <img src="../Upload/load_chart.png" alt="">
+                                    <div id="main" style="height:265px; width:400px;margin-left:-30px;margin-top:-30px;"></div>
                                 </div>
                                 <figcaption>
                                     <p>机组总负荷<span class="load-add">+</span></p>
@@ -560,35 +563,35 @@
                 <div class="system-content">
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                     <figure class="system-item">
                         <a href=""><img src="../Upload/system_item1.png" alt=""></a>
-                        <figcaption class="system-item-title"><a href="">EIIS</a></figcaption>
+                        <figcaption class="system-item-title"><a href="">图纸资料管理系统</a></figcaption>
                     </figure>
                 </div>
                 <span class="system-upload">
