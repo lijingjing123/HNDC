@@ -714,6 +714,7 @@ textarea::-webkit-input-placeholder {
 
 .page {
   min-width: 1002px;
+  background: url(../image/body_bg.png) repeat-x left top;
 }
 
 body {
@@ -736,7 +737,8 @@ time {
 
 #article {
   margin-left: 208px;
-  min-height: 450px;
+  min-height: 550px;
+  background: #fff;
 }
 
 .wrap-container {
@@ -1395,6 +1397,8 @@ time {
 }
 .system-item img {
   margin: 10px 10px 5px;
+  width: 30px;
+  height: 30px;
 }
 .system-item a {
   color: #555;

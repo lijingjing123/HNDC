@@ -11,8 +11,9 @@
   @at-root .side-nav{
     padding:8px 0px;
     color:#333;
+    background:transparent url('image.png') left top no-repeat;
     dl{
-      padding:0 20px;
+      padding:0 25px;
     }
     dl.on{
       background:url(../image/sub_dl.png) no-repeat 0 15px;

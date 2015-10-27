@@ -721,9 +721,10 @@ textarea::-webkit-input-placeholder {
 .side-nav {
   padding: 8px 0px;
   color: #333;
+  background: transparent url("image.png") left top no-repeat;
 }
 .side-nav dl {
-  padding: 0 20px;
+  padding: 0 25px;
 }
 .side-nav dl.on {
   background: url(../image/sub_dl.png) no-repeat 0 15px;
@@ -861,6 +862,7 @@ textarea::-webkit-input-placeholder {
 
 .page {
   min-width: 1002px;
+  background: url(../image/body_bg.png) repeat-x left top;
 }
 
 body {
@@ -883,7 +885,8 @@ time {
 
 #article {
   margin-left: 208px;
-  min-height: 450px;
+  min-height: 550px;
+  background: #fff;
 }
 
 .wrap-container {
